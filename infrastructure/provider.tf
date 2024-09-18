@@ -14,6 +14,13 @@ terraform {
     }
   }
   required_version = ">= 1.9.0"
+
+  cloud {
+    organization = "AE NV"
+    workspaces {
+      tags = [ "Lester" ]
+    }
+  }
 }
 
 # Configure the Azure provider
